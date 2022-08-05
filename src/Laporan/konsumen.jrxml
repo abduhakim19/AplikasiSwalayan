@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74b72a51-1f37-4998-9b16-dfa3bde42adc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="7227a869-0753-4ca7-9843-388d04daf3e0"/>
+	<subDataset name="Table Dataset 2" uuid="a9a2873b-eada-4660-b738-48c0cd3581a8"/>
+	<parameter name="NAMA_KARYAWAN" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from konsumen;]]>
+	</queryString>
+	<field name="kd_konsumen" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_konsumen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_lahir" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="0" width="138" height="30" uuid="d810e90c-c2e3-458a-b723-506c20533ef2"/>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PT. Superhero]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="1" width="29" height="30" uuid="9c8f0a59-56cd-4568-8a0f-3834e5263398"/>
+				<imageExpression><![CDATA["C:\\Users\\hakim\\Documents\\NetBeansProjects\\AplikasiSwalayan\\src\\assets\\Superhero_Logo_2.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38">
+			<staticText>
+				<reportElement x="0" y="0" width="162" height="20" uuid="c3395b00-6b2d-4bfa-b59a-266353eb8e99"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN KONSUMEN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<staticText>
+				<reportElement x="2" y="1" width="92" height="20" uuid="3452ba5b-0224-4c7a-83ea-78998a5464bb"/>
+				<textElement verticalAlignment="Top"/>
+				<text><![CDATA[Kode Konsumen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="0" width="89" height="20" uuid="0f15e01f-1235-4b24-9ec1-3674429c07e1"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="1" width="104" height="20" uuid="1c011327-bfaa-41c6-ba4c-6b227e43d82f"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="0" width="80" height="20" uuid="ebdb7850-f74d-4236-a02a-a0fd189f18e9"/>
+				<text><![CDATA[No. Telepon]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="20" width="555" height="1" uuid="44eb00c7-8704-46da-9d4d-b4573fefe7cc"/>
+			</line>
+			<staticText>
+				<reportElement x="489" y="0" width="65" height="20" uuid="5f9037bb-727f-4e40-99d3-e911d68d872d"/>
+				<text><![CDATA[tgl_lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="0" width="123" height="20" uuid="704db5a4-fb00-4ad1-bf46-256a5d9e4bd9"/>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+		<band height="24">
+			<textField>
+				<reportElement x="94" y="4" width="90" height="20" uuid="c04d1558-ed8d-4427-b35a-6d0a75d289ba"/>
+				<textFieldExpression><![CDATA[$F{nama_konsumen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="4" width="80" height="20" uuid="0c880275-40f2-48a2-ab44-36a593e1ac39"/>
+				<textFieldExpression><![CDATA[$F{no_telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="4" width="92" height="20" uuid="eae8fa65-cb9b-4d0f-9520-5c4e15c954fc"/>
+				<textFieldExpression><![CDATA[$F{kd_konsumen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="4" width="103" height="20" uuid="9902bfa1-b702-42fe-ac33-ae7de673c05a"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="489" y="4" width="65" height="20" uuid="02417037-7d75-4236-803b-157f9067ba6d"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd/MM/yyyy").format($F{tgl_lahir})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="4" width="122" height="20" uuid="80881e29-9867-470d-a142-aae44f49c10e"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="436" y="30" width="80" height="20" uuid="995931e4-2467-4c7c-909c-665557a68d0b"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="516" y="30" width="40" height="20" uuid="aafadf72-d551-46ba-9971-83cb3b582f5c"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="131">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="373" y="29" width="163" height="20" uuid="46907474-81fa-4eed-a4c4-4e712dc08b29"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="373" y="49" width="163" height="20" uuid="86d619f4-46f6-47eb-a972-540367dd6448"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Karyawan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="373" y="109" width="163" height="20" uuid="e8c95000-5039-4667-81eb-3b67e40118c8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{NAMA_KARYAWAN}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+	<noData>
+		<band height="61"/>
+	</noData>
+</jasperReport>
